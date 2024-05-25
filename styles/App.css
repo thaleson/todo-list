@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ .App {
+  text-align: center;
+  padding: 2rem;
+  background-color: #20232a;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.developer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #61dafb;
+  color: #20232a;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #61dafb;
+  border-radius: 4px;
+  width: calc(100% - 140px); /* Ajuste para o botão */
+  margin-right: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+  background: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 120px; /* Largura fixa para o botão na versão web */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinha texto e ícone no centro */
+}
+
+button img {
+  width: 20px; /* Ajuste o tamanho do ícone */
+  height: 20px; /* Ajuste o tamanho do ícone */
+  margin-left: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list {
+  margin-top: 2rem;
+}
+
+.todo-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.todo-counter p {
+  font-size: 18px;
+}
+
+.todo-counter span {
+  font-weight: bold;
+  color: #61dafb;
+}
+
+.todo-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list ul li {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 0.5rem; /* Reduzido o espaçamento entre as tarefas */
+  background: #3a3f47;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  display: flex; /* Para alinhar o ícone de lixeira */
+  align-items: center; /* Para alinhar o ícone de lixeira */
+}
+
+.todo-list ul li.completed {
+  background: #2e7d32;
+}
+
+.todo-list ul li span {
+  flex: 1;
+  text-align: left;
+}
+
+.todo-list ul li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.todo-list ul li button:hover {
+  color: #61dafb;
+}
+
+.todo-list ul li button img {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem; /* Espaçamento entre o texto da tarefa e o ícone de lixeira */
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  input,
+  button {
+    width: calc(100% - 20px); /* Ajuste para dispositivos móveis */
+  }
+
+  button {
+    margin-top: 0.5rem;
+    width: 100%; /* Botão ocupa toda a largura */
+  }
+
+  .App {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 20px; /* Reduz o tamanho da fonte para dispositivos móveis */
+  }
+
+  .todo-list ul li {
+    font-size: 16px; /* Reduz o tamanho da fonte para dispositivos móveis */
+  }
+}
+
+
